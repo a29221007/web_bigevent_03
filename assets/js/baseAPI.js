@@ -14,7 +14,7 @@ $(function () {
         
         // 3 身份认证，拦截
         option.complete = function (res) { 
-            console.log(res);
+            //console.log(res);
             var obj = res.responseJSON;
             if (obj.status === 1 && obj.message === '身份认证失败！') { 
                 // 1 清除本地的token
